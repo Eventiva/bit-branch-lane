@@ -70,8 +70,8 @@ jobs:
       - name: Bit Lanes
         run: cd test-data && bit lane list --details
       
-      - name: Commit Bitmap
-        uses: bit-tasks/commit-bitmap@v1
-        with:
-          git-user-name: 'ashanfernando'
-          git-user-email: 'ashan256@gmail.com'
+      # - name: Commit Bitmap
+      #   uses: bit-tasks/commit-bitmap@v1 // This will not work until the Eventiva patch is merged. Will need to use the updated version when it is merged.
+      #   with:
+      #     git-user-name: 'ashanfernando'
+      #     git-user-email: 'ashan256@gmail.com'
