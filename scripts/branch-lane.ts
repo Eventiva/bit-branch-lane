@@ -1,6 +1,9 @@
 import { exec } from '@actions/exec'
 
-const run = async (laneName: string, wsdir: string) => {
+/**
+ *
+ */
+const run = async (laneName: string, wsdir: string): Promise<void> => {
   const org = process.env.ORG
   const scope = process.env.SCOPE
 
